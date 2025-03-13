@@ -1,0 +1,273 @@
+/* department nav Button styles */
+.buttons-container button {
+  margin-right: 10px;
+  background: #FF8811; /* Default button background color */
+  color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.37);
+  border: none;
+  width: 180px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 25px;
+  transition: background-color 0.3s ease, 
+  transform 0.2s ease, color 0.2s ease;
+}
+
+.buttons-container button:hover {
+  transform: scale(1.05); /* Add a scaling effect on hover */
+  color: #000;
+  transition: transform 0.2s ease; /* Add a separate transition for transform */
+}
+
+/* Change dep nav button color when clicked */
+.btn1:focus{
+  background: #fb5454; /* Updated button background color when clicked and when focused (keyboard navigation) */
+  color: #000000;
+}
+.btn2:focus{
+  background: #5fccff; /* Updated button background color when clicked and when focused (keyboard navigation) */
+  color: #000000;
+}
+.btn3:focus{
+  background: #d7d7d7f0; /* Updated button background color when clicked and when focused (keyboard navigation) */
+  color: #000000;
+}
+.btn4:focus{
+  background: #f1ff30f0; /* Updated button background color when clicked and when focused (keyboard navigation) */
+  color: #000000;
+}
+  
+/*-----------notification background-----------*/
+.notification-panel {
+    text-align: left;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    height: 500px;
+    width: 1450px;
+    margin-right: -1px;
+    margin-left: -1px;
+    margin-top: 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    
+  }
+  /*-----------Details text-----------*/
+  .request-head {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-left :20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    
+  }
+  /*-----------notification tiles-----------*/
+  .record-box {
+    margin-top: 50px;
+    background-color: #d9e4e8;
+    background:#e3daff; 
+    border: 1px solid #247bc25a;
+    padding: 20px;
+    margin: 20px;
+    margin-top: -10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 97%;
+    
+  
+  }
+  .record-box:hover{
+    transition: transform 0.2s ease; /* Add a separate transition for transform */
+    transform: scale(1.01); /* Add a scaling effect on hover */
+    background-color: #ffffff;
+  }
+  .expanded-record {
+    /* Add styles for the expanded record here */
+    /* For example, you can increase the height, change background color, etc. */
+    height: auto; /* Adjust this value as needed */
+    background-color: lightgray; /* Adjust this value as needed */
+  }
+  .record-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ /* details on tiles */ 
+  .applicant-name {
+    font-size: 18px;
+    color: #002147;
+    font-weight: bold;
+  }
+  .requested-date {
+    font-size: 15px;
+    color: #be4900;
+    margin-top: -25px;
+    margin-left: 520px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 16px;
+    margin-top: 15px; /* Add margin-top to separate from the header */
+    font-weight: bold;
+    color: #002147;
+  }
+  
+  
+/* allign status box */
+  .reject-confirm-box {
+    margin-left: 1080px;
+    margin-top: -60px;
+    position: absolute;
+
+  }
+/* Style for the status box */
+  .reject-confirm-box input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+/* Style for the confirm button */
+  .action-button {
+    background-color: #2fc224;
+    color: #fff;
+    border: none;
+    margin-left: 1081px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+  } 
+  .action-button:hover {
+    background-color: #2fc224;
+    transform: scale(1.05); /* Add a scaling effect on hover */
+    color: #000;
+    transition: transform 0.2s ease; /* Add a separate transition for transform */
+  }
+
+/* Style for the show more button */
+  .action-button-showmore {
+    position: relative; /* Apply absolute positioning */
+    left: 1082px; /* Move 500px from the left edge of its positioned parent */
+    bottom: -10px; /* Move to 80% from the top edge of its positioned parent */
+    background-color: transparent;
+    color: #247bc2;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 210px;
+    border: 2px solid #247bc2;
+  }
+  .action-button-showmore:hover {
+    background-color: #247bc2;
+    color: #fff;
+    transform: scale(1.05); /* Add a scaling effect on hover */
+    transition: transform 0.2s ease; /* Add a separate transition for transform */
+  }
+  
+/* Style for the reject button */
+  .action-button2 {
+    background-color: #ff6842;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+  }
+  .action-button2:hover {
+    transform: scale(1.05); /* Add a scaling effect on hover */
+    color: #000;
+    transition: transform 0.2s ease; /* Add a separate transition for transform */  }
+  
+/*-------------back button------------*/
+.backbtn {
+  background: #FF8811;
+  color: #000000;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  position: fixed;
+  top: 35px; /* Adjust the top position as needed */
+  right: 40px; /* Adjust the right position as needed */
+  z-index: 1; /* Ensure the z-index is sufficient */
+}
+
+.backbtn:hover {
+  background: #FF8811; /* Button background color on hover */
+  color: #fff; /* Text color on hover */
+}
+/*-------------Print button------------*/
+.print-button{
+  background: #FF8811;
+  color: #000000;
+  border: none;
+  margin-left: -1px;
+  margin-top: 30px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+  position: absolute;
+}
+.print-button:hover{
+  color: #fff;
+  transform: scale(1.05); /* Add a scaling effect on hover */
+  transition: transform 0.2s ease; /* Add a separate transition for transform */  
+
+}
+/*-------------Details of tiles------------*/
+.details{
+  color: #000000;
+  margin-left: 20px;
+}
+.detail-row{
+  margin-left: 500px;
+  margin-top: -145px;
+}
+.detail-row2{
+  margin-top: -94px;
+  margin-left: 500px;
+}
+
+/* Confirmed style */
+.record-box1 {
+  background-color: blue; /* Set the background color for confirmed */
+}
+
+/* Rejected style */
+.record-box2 {
+  background-color: red; /* Set the background color for rejected */
+}
+  /* notification tile status */
+  .reject-confirm-box {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .reject-confirm-box input {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+
+  .record-box.confirm {
+    background-color: rgb(198, 235, 198);
+  }
+  
+  .record-box.reject {
+    background-color: rgb(238, 195, 195);
+  }
+  .user1{
+    
+  }

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*-------------------------BG Template--------------------------*/
+#bg-image {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire viewport */
+}
+.header-rectangle {           /*header rectangle*/
+    position: relative;
+    background-color: #002147;
+    width: 100.7%;
+    height: 111px;
+}
+.logo {
+    width: 500px;
+    position: absolute;
+    top: -57px; /* Adjust this value to control the vertical position */
+    left: 0px; /* Adjust this value to control the horizontal position */
+}
+.help{         /*---help img---*/
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: -15px;
+    z-index: 1;
+    cursor: pointer;
+}
+/*-----midbg-----*/
+.Midbg {     /*----Tile----*/
+    
+    background: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 0px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    padding: 250px;
+    margin-top: 50px;   /**/
+    margin-right: 150px;
+    margin-left: 150px;
+    transition: background 0.5s, transform 0.5s;
+    
+}
+.Midbg:hover{    /*----Tile hover animation----*/
+    transform: translateY(-5px);
+}
+
+/*--------------------------------------------------------*/
+
+
+/*-------------------------Contents of homepage--------------------------*/
+.midtext div p {
+    font-size: 16px;
+    line-height: 35px;
+    font-family: Arial;
+    color: #0000009d;
+    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-left: 250px;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
+}
+
+.midtext div h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300px;
+    margin-top: -480px;
+    margin-left: 180px;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
+} 
+.loginarea form {
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: -360px; /* Move the entire form up by 100px */
+    margin-left: 600px;
+
+}
+.emailtextinput {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.485), rgba(255, 255, 255, 0.496));
+    backdrop-filter: blur(10px);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 12px 80px; /* Adjust padding as needed */
+    margin: 20px; /* Add some margin for spacing */
+    font-size: 16px;
+    border-radius: 40px;
+    z-index: 1; /* Add this line */
+}
+.passwordtextinput {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.485), rgba(255, 255, 255, 0.496));
+    backdrop-filter: blur(10px);
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 12px 80px; /* Adjust padding as needed */
+    margin: 20px; /* Add some margin for spacing */
+    font-size: 16px;
+    border-radius: 40px;
+    z-index: 1; /* Add this line */
+}
+.submitbtn {
+    background: #FF8811;
+    border: 0px;
+    color: #000000;
+    padding: 12px 70px; /* Adjust padding as needed */
+    font-size: 16px;
+    border-radius: 40px;
+    margin-top: 20px; /* Add margin-top for spacing between input and button */
+    cursor: pointer;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    z-index: 1; /* Add this line */
+}
+.submitbtn:hover{
+    background: #ffaa00;
+    transform:translatey(-2px);
+
+}
+
+/*-------------css for small screen---------------*/
+
+@media only screen and (max-width: 768px){
+
+    .logo {     
+        padding: 100px;
+        margin-left: -120px;
+        margin-top: -70px;
+
+    }
+    .header-rectangle {           /*header rectangle*/
+        height: 100px;
+    }
+    .Midbg{
+        padding: 350px 180px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+    .midtext div h2 {
+        font-size: 19px;
+        line-height: 25px;
+        font-weight: 300px;
+        margin-top: -685px;
+        margin-left: 30px;
+        position: relative; /* Add this line */
+        z-index: 1; /* Add this line */    } 
+    .midtext div p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-left: 50px;
+        position: relative; /* Add this line */
+        z-index: 1; /* Add this line */
+    }
+    .loginarea form {
+        display: flex;
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center items horizontally */
+        margin-top: -40px; /* Move the entire form up by 100px */
+        margin-left: 10px;
+    
+    }
+    .emailtextinput ,.passwordtextinput , .submitbtn {
+        
+        margin: 10px; /* Add some margin for spacing */
+        padding: 8px 60px; /* Adjust padding as needed */}
+}
+
+.foget{
+    color: red;
+}

@@ -1,0 +1,227 @@
+.form-container {
+  padding: 20px;
+}
+
+/*---------------------------Confirmation js file css styles-----------------------------*/
+
+  /*---------------------------Table-----------------------------*/
+  .Stable {
+    border-collapse: collapse;
+    width: 100%; /* Make the table take up 100% of its container's width */
+  }
+  
+  .Stable th,
+  .Stable td {
+    border: 1px solid #ddd;
+
+  }
+  .Stable th {
+    background-color: #f2f2f2;
+  }
+  
+  .Stable tr:nth-child(even) {
+    background-color: #b8b8b828;    
+  }
+/* Change the width and center text in the first column */
+.Stable th:nth-child(1),
+.Stable td:nth-child(1) {
+    width: 300px; /* Adjust the width as needed */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Change the width of the "Actions" column (fourth column) */
+.Stable th:nth-child(4),
+.Stable td:nth-child(4) {
+  width: 250px; /* Adjust the width as needed */
+  height: 60px;
+
+}
+/* Change the width of the column (fifth column) */
+.Stable th:nth-child(5){
+  text-align: center; /* Center text horizontally */
+}
+.Stable td:nth-child(5) {
+  width: 250px; /* Adjust the width as needed */
+  text-align: center; /* Center text horizontally */
+  background-color:beige;
+}
+/*-------------------------------------------------------------------------------------*/
+/*---------------------------Cancel js file css styles-----------------------------*/
+  
+/* Style for the delete button */
+.action-buttonDelete {
+  background-color: #ff6842;
+  color: #fff;
+  border: none;
+  margin-top: -20px;
+  margin-left: 1190px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+.action-buttonDelete:hover {
+  transform: scale(1.05); /* Add a scaling effect on hover */
+  color: #000;
+}
+/* Style for the save button */
+.action-buttonSave{
+  background-color: #2fc224;
+  color: #fff;
+  border: none;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 1081px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+} 
+.action-buttonSave:hover {
+  background-color: #2fc224;
+  transform: scale(1.05); /* Add a scaling effect on hover */
+  color: #000;
+  transition: transform 0.2s ease; /* Add a separate transition for transform */
+}
+  /*-----------notification tiles-----------*/
+  .record-boxA {
+    margin-top: 50px;
+    background-color: #d9e4e8;
+    background:#e3daff; 
+    border: 1px solid #247bc25a;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 18px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 97%;
+    
+  
+  }
+  .record-boxA:hover{
+    transition: transform 0.2s ease; /* Add a separate transition for transform */
+    transform: scale(1.01); /* Add a scaling effect on hover */
+    background-color: #ffffff;
+  }
+    
+/*-----------notification background-----------*/
+
+.Smid-container{
+  background: linear-gradient(rgba(255, 255, 255, 0.6));
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  border: 0px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 1450px; /* Adjust the width as needed */
+  position: absolute;
+  top: 130px;
+  bottom: 20px;
+  right: 20px;
+  transition: background 0.5s, transform 0.5s;
+  overflow-y: auto; /* Add scrollbar when content overflows */
+}
+.Smid-container:hover {   /*-----------hover effect of tile styles------------*/
+  transform: translateY(-5px);
+}
+/*-------------Details of tiles------------*/
+.Sdetails{
+  color: #000000;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+
+.Sdetail-row2{
+  margin-left: 500px;
+  margin-top: -120px;
+}
+.Sdetail-row3{  
+  margin-top: 30px;
+  margin-left: 500px;
+}
+.Sdetail-row{  
+  margin-top: -71px;
+  margin-left: 0px;
+}
+.expanded-detailS{
+  margin-top: 10px;
+
+}
+/*-------------------------------------------------------------------------------------*/
+/*---------------------------------------------Login page's Login icon & common elements styles----------------------------------------*/
+
+.user{
+  font-size: small;
+  position: fixed;
+  top: 50px; /* Adjust the top position as needed */
+  right: 200px; /* Adjust the right position as needed */
+  z-index: 1;
+  color: #ffffff;
+  margin-top: 31px;
+  margin-right: -10px;    cursor: help;
+}
+
+.userimg{
+  border-radius: 100px;
+  border: none;
+  width: 43px;
+  height: -5px;
+  top: 36px; /* Adjust the top position as needed */
+  right: 182px; /* Adjust the right position as needed */
+  position: fixed;
+  z-index: 1;
+
+}
+
+.user1{
+  font-size: small;
+  position: fixed;
+  top: 50px; /* Adjust the top position as needed */
+  right: 200px; /* Adjust the right position as needed */
+  z-index: 1;
+  color: #ffffff;
+  margin-top: 31px;
+  margin-right: -25px;    
+  cursor: help;
+}
+.user2{
+  font-size: small;
+  position: fixed;
+  top: 50px; /* Adjust the top position as needed */
+  right: 200px; /* Adjust the right position as needed */
+  z-index: 1;
+  color: #ffffff;
+  margin-top: 31px;
+  margin-right: -20px;    
+  cursor: help;
+}
+
+.msg {
+  text-decoration: none;
+  text-align: center;
+  color: #000000; /* Text color */
+  border: none;
+  width: 200px; /* Fixed width for all buttons */
+  height: 50px; /* Fixed height for all buttons */
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: help;
+  /* Center text vertically */
+  align-items: center;
+  font-weight: 500;
+  z-index: 0;
+  margin-top: -50px;
+  margin-left: 20px;
+}
+.fbessuser {
+  font-size: small;
+  position: fixed;
+  top: 50px; /* Adjust the top position as needed */
+  right: 200px; /* Adjust the right position as needed */
+  z-index: 1;
+  color: #ffffff;
+  margin-top: 31px;
+  margin-right: -17px;    
+  cursor: help;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,112 @@
+.form-container2 {
+  display: flex;
+  flex-direction: column; /* Arrange boxes vertically */
+  gap: 20px; /* Add spacing between boxes */
+}
+
+  /* notification tile */
+  .record-box1 {
+    background-color: #ffffff;
+    border: 0.01px solid #dfdfdf;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 20px; /* Add padding inside the boxes */
+  }
+  .record-box1:hover {
+    background-color: #d0d4fc;
+    transform: scale(1.01); /* Add a scaling effect on hover */
+     transition: transform 0.5s ease; /* Add a separate transition for transform */
+  }
+
+  
+  /* notification tile details */
+  .applicant-name {
+    font-size: 18px;
+    color: #002147;
+    font-weight: bold;
+  }
+  .requested-date1 {
+    font-size: 15px;
+    color: #be4900;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 14px;
+    margin-top: 15px; /* Add margin-top to separate from the header */
+    font-weight: bold;
+    color: #002147;
+  }
+  
+  
+  /* notification tile status */
+  .reject-confirm-boxA {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .reject-confirm-boxA input {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  .notification-panelA {       /*-----------tile styles------------*/
+    background: linear-gradient(rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 30px;
+    width: 1150px; /* Adjust the width as needed */
+    position: absolute;
+    top: 145px;
+    bottom: 28px;
+    right: 20px;
+    transition: background 0.5s, transform 0.5s;
+    overflow-y: auto; /* Add scrollbar when content overflows */
+  }
+  
+  .notification-panelA:hover {   /*-----------hover effect of tile styles------------*/
+    transform: translateY(-5px);
+  }
+
+
+/* FullFormD.css */
+
+/* Add your existing CSS styles here */
+
+.record-box1 {
+  /* Default styles for record-box1 */
+  background-color: #fff; /* Default background color */
+  border: 1px solid #ccc; /* Border for the record box */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.record-box1.confirm {
+  background-color: rgb(198, 235, 198); /* Green background for confirmed records */
+}
+
+.record-box1.reject {
+  background-color: rgb(238, 195, 195); /* Red background for rejected records */
+}
+
+/* Add more CSS styles as needed */
+
+.Name{
+  text-align: right;
+}
+
+/* Add styles for the notification message */
+
+/* In your FullFormD.css file or a separate CSS file */
+.insurance-message {
+  background-color: #e15b5b; /* Green background color */
+  color: #fff; /* White text color */
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  /* Add any other styles you want to apply */
+}

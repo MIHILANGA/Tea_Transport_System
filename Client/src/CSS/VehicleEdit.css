@@ -1,0 +1,95 @@
+.mid-container{
+    background: linear-gradient(rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 1450px; /* Adjust the width as needed */
+    position: absolute;
+    top: 130px;
+    bottom: 20px;
+    right: 20px;
+    transition: background 0.5s, transform 0.5s;
+    overflow-y: auto; /* Add scrollbar when content overflows */
+}
+.mid-container:hover {   /*-----------hover effect of tile styles------------*/
+    transform: translateY(-5px);
+}
+.deletebtn{
+    
+    background: #FF8811; /* Button background color */
+    color: #000000; /* Text color */
+    border: 0.5px solid #ccc;
+    padding: 10px 30px; /* Adjust padding as needed */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-size: 10px;
+    width: 90px;
+    height: 35px;
+    margin-right: -40px;
+}
+.savebtn{
+    
+    background: #eeff36; /* Button background color */
+    color: #000000; /* Text color */
+    border: 0.5px solid #ccc;
+    padding: 10px 30px; /* Adjust padding as needed */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-size: 10px;
+    width: 90px;
+    height: 35px;
+    margin-right: 10px;
+    margin-left: -45px;
+    
+}
+.deletebtn:hover,
+.savebtn:hover {   /*-----------hover effect of tile styles------------*/
+    background: #FF8811; /* Button background color on hover */
+    color: #fff; /* Text color on hover */
+    transform:scale(1.01);
+  }
+  
+  /*---------------------------Table-----------------------------*/
+  .table {
+    border-collapse: collapse;
+    width: 100%; /* Make the table take up 100% of its container's width */
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+
+  }
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #b8b8b828;    
+  }
+/* Change the width and center text in the first column */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+    width: 180px; /* Adjust the width as needed */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Change the width of the "Actions" column (sixth column) */
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  width: 220px; /* Adjust the width as needed */
+}
+.fixed-header1 {
+    position: sticky;
+    top: 0px; /* Stick the header to the top of the container */
+    background-color: #fff; /* Add a background color for the header */
+    z-index: 1; /* Ensure the header appears above the table content */
+  }
+  
+
+.table{
+  text-align: center;
+}

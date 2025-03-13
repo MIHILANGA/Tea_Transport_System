@@ -1,0 +1,54 @@
+/* Modify the table styling */
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #969ea7;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .data-table td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Buttons inside the table */
+  .data-table button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .data-table button1 {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #18871c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Select inputs inside the table */
+  .data-table select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
